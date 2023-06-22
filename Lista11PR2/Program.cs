@@ -18,13 +18,34 @@ namespace Lista11PR2
             {
                 vet[i] = rand.Next(100, 3000);
             }
+            for(int i = 0; i < 1000; i++)
+            {
+                Console.WriteLine("Põsição[{0}] = {1}", i, vet[i]);
+            }
             for (int i = 0; i < 1000; i++)
             {
-                do
+          
+                Console.WriteLine("Digite um número: ");
+                numAd = int.Parse(Console.ReadLine());
+
+                for(int j = 0; j < 1000; j++)
                 {
-                    Console.WriteLine("Digite um número: ");
-                    numAd = int.Parse(Console.ReadLine());
-                } while (numAd != vet[i]);
+                    if (numAd == vet[i])
+                    {
+                        break;
+
+                    }
+                }
+
+
+
+
+                //do
+                //{
+                //    Console.WriteLine("Digite um número: ");
+                //    numAd = int.Parse(Console.ReadLine());
+                //} while (numAd != vet[]);
+                //break;
             }
         }
         public static void Exercício2()
